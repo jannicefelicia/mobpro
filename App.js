@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Greeting from './components/Greeting';
+import Layout from './components/Layout';
 
 class App extends Component {
   state = {
@@ -9,10 +10,7 @@ class App extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <Greeting text={this.state.greeting} />
-        <Text>{this.state.greeting}</Text>
-      </View>
+      <Layout />
     )
   }
 }
